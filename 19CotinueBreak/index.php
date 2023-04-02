@@ -19,7 +19,7 @@ while ($i < 9) {
 //}
 
 // Чётные
-$i = 1;
+/*$i = 1;
 while ($i < 10) {
     if ($i % 2) {
         $i++;
@@ -38,19 +38,31 @@ while ($i < 10) {
     }
     echo "$i<br>";
     $i++;
-}
+}*/
 
-echo '<table border = "1px" width = "100%">';
+/*echo '<table border = "1px" width = "100%">';
 for ($tr = 1; $tr < 10; $tr ++) {
     echo "<tr>";
     for ($td = 1; $td < 10; $td ++) {
-        echo "<td> $td * $tr = " . $td * $tr . "</td>";
+        if ($td == 5) {
+            continue 1;
+        }
+        echo "<td> $td</td>";
     }
     echo "</tr>";
 }
-echo '</table>';
+echo '</table>';*/
 
+$i = 1;
 
+while (true) {
+    echo "$i<br>";
+    if ($i == 20) {
+        echo 'Число найдено!';
+        break;
+    }
+    $i++;
+}
 
 
 
